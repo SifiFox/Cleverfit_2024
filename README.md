@@ -1,5 +1,9 @@
 ## Completed training Cleverfit App 
 
+![image](https://github.com/SifiFox/Cleverfit_2024/assets/36167942/422894a2-f7e8-413c-bb0f-be650e2e89dc)
+![image](https://github.com/SifiFox/Cleverfit_2024/assets/36167942/bea74c9d-5240-40ce-8bc7-7cb691ab827e)
+![image](https://github.com/SifiFox/Cleverfit_2024/assets/36167942/7144047d-2682-4912-8e3c-8a728011d99a)
+![image](https://github.com/SifiFox/Cleverfit_2024/assets/36167942/e233ec55-ab08-41dc-86b2-97c8824c3660)
 ![image](https://github.com/SifiFox/Cleverfit_2024/assets/36167942/5a595f28-7cc8-4bb2-a58f-5b1ac58c84af)
 ![image](https://github.com/SifiFox/Cleverfit_2024/assets/36167942/5ce093bb-0cbc-4f8f-bde8-6755b1f98380)
 ![image](https://github.com/SifiFox/Cleverfit_2024/assets/36167942/c3849269-fd63-47d9-9833-09aeecc924a2)
