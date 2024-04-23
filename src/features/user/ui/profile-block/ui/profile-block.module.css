@@ -1,0 +1,5 @@
+.profileBlockTitle {
+  font-size: var(--m);
+  font-weight: 600;
+  margin-bottom: var(--m);
+}

@@ -1,0 +1,44 @@
+.settingsSwitches{
+    display: flex;
+    flex-direction: column;
+    gap: var(--m);
+    padding: var(--m) 0;
+}
+
+.switchBlock{
+    max-width: 505px;
+    width: 100%;
+}
+.switchWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+:global{
+    .ant-switch-checked{
+        background: var(--primary-light-6);
+    }
+}
+.disabledRow{
+    color: var(--disable-25);
+    cursor: not-allowed;
+    :global{
+        .ant-switch-checked{
+            background: #BFBFBF;
+        }
+    }
+}
+
+.switchTitle{
+    display: flex;
+    font-weight: 600;
+    gap: var(--es);
+    align-items: center;
+    font-size: 16px;
+    @media screen and (max-width: 650px) {
+        max-width: 70%;
+        align-items: flex-start;
+        font-size: var(--sm);
+    }
+}

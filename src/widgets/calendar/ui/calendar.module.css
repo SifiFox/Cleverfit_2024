@@ -1,0 +1,88 @@
+.calendarWrapper {
+  box-sizing: border-box;
+  height: 100%;
+  background: var(--header-bg);
+  padding: 0 24px 93px;
+}
+@media screen and (max-width: 750px) {
+  .calendarWrapper {
+    max-height: 348px;
+  }
+}
+
+.cellWrapper {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  left: 0;
+  top: var(--xl);
+  padding-left: var(--xxs);
+  padding-bottom: var(--xxs);
+  overflow: auto;
+}
+@media screen and (max-width: 750px) {
+  .cellWrapper {
+    top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+    height: 100%;
+  }
+}
+
+.modalTraningsWrapper {
+  overflow: hidden;
+  position: absolute;
+  width: 264px;
+  height: 244px;
+}
+
+:global .ant-picker-calendar-full .ant-picker-panel .ant-picker-calendar-date-content {
+  height: 120px;
+}
+:global .ant-picker-cell-in-view.ant-picker-cell-today .ant-picker-cell-inner:before {
+  z-index: 0;
+}
+@media only screen and (max-width: 480px) {
+  :global .ant-picker-calendar-header {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: var(--xxs);
+  }
+  :global .ant-picker-calendar-header .ant-radio-group {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 750px) {
+  :global .ant-picker-content tr {
+    max-height: 30px;
+  }
+  :global .ant-picker-content .ant-picker-cell {
+    width: 37px;
+    max-height: var(--xl);
+    padding: 0;
+  }
+  :global .ant-picker-content .ant-picker-cell-inner {
+    width: 100%;
+  }
+}
+
+:global .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner {
+  background: unset;
+  color: var(--title-85);
+}
+
+.cellWrapper .mobileCell:after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: var(--xl);
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  background: #F0F5FF;
+}
+
+.trainingModal {
+  width: 90% !important;
+}

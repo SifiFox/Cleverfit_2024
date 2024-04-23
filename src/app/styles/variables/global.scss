@@ -1,0 +1,98 @@
+
+:root {
+    --font-family-main: "Inter", "Times New Roman", Serif;
+    --primary-light-10: #030852;
+    --primary-light-9: #061178;
+    --primary-light-6: #2F54EB;
+    --primary-light-7: #1D39C4;
+    --primary-light-5: #597EF7;
+    --primary-light-3: #ADC6FF;
+    --primary-light-1: #F0F5FF;
+    --primary-error-1: #ffdcdc;
+    --disable-25: #BFBFBF;
+    --secondary-45: #8C8C8C;
+    --blue-light-1: #E6F7FF;
+    --title-85: #262626;
+    --sider-bg: #FFF;
+    --header-bg: #F0F5FF;
+    --gray-5: #D9D9D9;
+    --gray-4: #F0F0F0;
+    --gray-1: #FFF;
+    --gray-2: #FAFAFA;
+
+    --error: #FF4D4F;
+
+//    indentations
+    --es: 4px;
+    --ees: 5px;
+    --exs: 6px;
+    --exxs: 7px;
+    --xxs: 8px;
+    --xs: 9px;
+    --s: 10px;
+    --ssm: 12px;
+    --sm: 14px;
+    --m: 16px;
+    --l: 20px;
+    --xl: 24px;
+    --xls: 30px;
+    --xll: 32px;
+    --xxl: 42px;
+    --xxxl: 48px;
+    --3x2l: 53px;
+    --2xxl: 64px;
+    --4xl: 76px;
+    --5xl: 130px;
+
+    --r-es: 0 4px 0 0;
+    --y-xl: 24px 0;
+    --y-exs: 6px 0;
+    --y-s: 10px 0;
+    --y-ssm: 12px 0;
+    --x-yexxs: 0 7px;
+    --x-m: 0 16px;
+    --x-xl: 0 24px;
+    --x-ees: 0 5px;
+    --xb-m-xxl: 0 16px 42px;
+    --xb-xl-xxl: 0 24px 42px;
+    --xb-l-l: 0 24px 24px;
+    --xb-m-l: 0 16px 24px;
+    --txb-l-m-m: 20px 16px 16px;
+    --xy-m-xl: 16px 24px;
+    --xy-xs-xl: 9px 24px;
+    --xy-xxs-xl: 8px 24px;
+    --xy-xxll-ym: 32px 16px;
+    --xy-xxxxl-yxll: 48px 32px;
+    --xy-x4xl-y5xl: 77px 130px;
+    --xy-xxxxl-yl: 48px 20px;
+
+    --logo-indentations: 14px 46px 17px 29px;
+
+    --reg-padding-mobile: 14px 16px 32px 16px;
+    --form-content-padding: 60px 85px 190px 85px;
+    --form-content-padding-mobile: 33px 16px 124px 16px;
+    --result-padding: 18px 54px 23px 54px;
+    --change-pass-padding: 60px 85px 40px 85px;
+
+//    font sizez
+    --font-xxl: 38px;
+    --font-l: 24px;
+    --font-m: 20px;
+    --font-sm: 18px;
+    --font-s: 16px;
+    --font-xs: 14px;
+    --font-xxs: 12px;
+
+//   line height
+    --lh-default: 130%;
+//   sizes
+    --h-xl: 70px;
+    --h-xll: 46px;
+    --h-l: 40px;
+    --h-ll: 36px;
+    --h-ml: 30px;
+    --h-m: 24px;
+// border
+    --min: 1px;
+    --2min: 2px;
+}

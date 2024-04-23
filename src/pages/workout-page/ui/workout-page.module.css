@@ -1,0 +1,60 @@
+.trainingContent {
+  margin: 0 var(--xl) var(--xl);
+  padding: var(--xl);
+  background: var(--gray-1);
+  border-radius: var(--xxs);
+}
+@media screen and (max-width: 750px) {
+  .trainingContent {
+    margin: 0;
+  }
+}
+
+.workoutsWrapper :global .ant-tabs-nav-wrap {
+  justify-content: center;
+}
+.workoutsWrapper :global .ant-tabs-nav-wrap .ant-tabs-nav-list {
+  width: 100%;
+  justify-content: space-between;
+  color: var(--title-85);
+  margin-right: var(--xll);
+}
+.workoutsWrapper :global .ant-tabs-nav-wrap .ant-tabs-tab {
+  padding: 0;
+}
+.workoutsWrapper :global .ant-tabs-nav-wrap .ant-tabs-tab-btn {
+  font-size: var(--xl);
+}
+.workoutsWrapper :global .ant-tabs-nav-wrap .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--primary-light-6);
+}
+.workoutsWrapper :global .ant-tabs-nav-wrap .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap,
+.workoutsWrapper :global .ant-tabs-nav-wrap .ant-tabs-nav {
+  overflow: scroll;
+}
+.workoutsWrapper :global .ant-tabs-content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.workoutsWrapper :global .ant-tabs-content::-webkit-scrollbar {
+  display: none;
+}
+.workoutsWrapper :global .ant-list-pagination .ant-pagination {
+  text-align: left;
+}
+@media screen and (max-width: 840px) {
+  .workoutsWrapper :global .ant-tabs-nav {
+    overflow: hidden;
+  }
+  .workoutsWrapper :global .ant-tabs-nav-wrap .ant-tabs-tab-btn {
+    font-size: var(--sm);
+  }
+  .workoutsWrapper :global .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap, .workoutsWrapper :global .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
+    overflow: unset;
+  }
+}
+@media screen and (max-width: 600px) {
+  .workoutsWrapper :global .ant-row div {
+    width: 100%;
+  }
+}

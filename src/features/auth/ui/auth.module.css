@@ -1,0 +1,91 @@
+.authTabs :global .ant-tabs-nav-list {
+  width: 88%;
+}
+.authTabs :global .ant-tabs-tab {
+  width: 50%;
+  justify-content: center;
+  font-size: var(--font-s);
+}
+@media screen and (max-width: 400px) {
+  .authTabs :global .ant-tabs-tab {
+    font-size: var(--font-xs);
+  }
+}
+.authTabs :global .ant-tabs-tab-btn {
+  color: var(--title-85);
+}
+.authTabs :global .ant-tabs-tab + .ant-tabs-tab {
+  margin: 0;
+}
+.authTabs :global .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--primary-light-6);
+}
+.authTabs :global .ant-tabs-ink-bar {
+  background: var(--primary-light-6);
+}
+.authTabs :global .ant-tabs-nav-list {
+  width: 100%;
+}
+.authTabs :global .ant-input-affix-wrapper .ant-input {
+  min-height: var(--h-ml);
+  max-height: var(--h-ml);
+}
+.authTabs :global .ant-input {
+  min-height: var(--h-l);
+  max-height: var(--h-l);
+  box-sizing: border-box;
+}
+.authTabs :global .ant-btn-primary {
+  background: var(--primary-light-6);
+}
+.authTabs :global .ant-checkbox-checked .ant-checkbox-inner {
+  background: var(--primary-light-6);
+  border-color: var(--primary-light-6);
+}
+.authTabs :global .ant-input-group-addon {
+  color: var(--title-85);
+}
+.authTabs :global .ant-checkbox-wrapper {
+  font-weight: 500;
+  display: flex;
+  width: 100%;
+}
+@media screen and (max-width: 400px) {
+  .authTabs :global .ant-checkbox-wrapper label {
+    font-size: var(--font-xxs);
+  }
+}
+.authTabs :global .ant-tabs-nav {
+  margin-bottom: var(--xl);
+  max-height: var(--h-xll);
+}
+.authTabs :global .ant-form-item {
+  margin-bottom: var(--xl);
+}
+.authTabs :global .ant-btn {
+  height: var(--h-l);
+  font-size: var(--m);
+  font-weight: 400;
+}
+@media screen and (max-width: 400px) {
+  .authTabs :global .ant-btn {
+    font-size: var(--sm);
+  }
+  .authTabs :global .ant-btn .anticon {
+    display: none;
+  }
+}
+
+.titleLogo {
+  width: 100%;
+  margin-bottom: var(--xxxl);
+}
+@media screen and (max-width: 400px) {
+  .titleLogo {
+    max-width: 203px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--xll);
+  }
+}

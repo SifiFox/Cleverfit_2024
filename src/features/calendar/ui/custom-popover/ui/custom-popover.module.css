@@ -1,0 +1,172 @@
+:global .ant-drawer-header-title {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 750px) {
+  :global .ant-drawer-content-wrapper {
+    width: 100% !important;
+    top: 85px !important;
+  }
+  :global .ant-drawer-content-wrapper .ant-drawer-content {
+    border-radius: var(--xl) var(--xl) 0 0;
+  }
+}
+
+.drawerJointHeaderInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.drawerJointHeaderInfo :global .ant-badge {
+  align-self: flex-end;
+}
+
+.drawerJointPartnerInfo {
+  display: flex;
+  gap: var(--xxs);
+}
+.drawerJointPartnerInfo p {
+  width: 50%;
+}
+
+.popoverWrapper {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 264px;
+  border-radius: var(--2min);
+  z-index: 3;
+}
+@media screen and (max-width: 750px) {
+  .popoverWrapper {
+    width: 88vw;
+  }
+}
+.popoverWrapper :global .ant-card-head {
+  padding: 0 var(--ssm);
+  border-bottom: none;
+}
+.popoverWrapper :global .ant-card-body {
+  padding: var(--ssm);
+}
+.popoverWrapper .layoutBlocks {
+  max-width: 220px;
+}
+.popoverWrapper .closeBtn {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popoverWrapper .cardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 64px;
+}
+.popoverWrapper .cardFooter {
+  padding-top: var(--ssm);
+}
+
+.drawerHeaderWrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--s);
+  position: relative;
+}
+.drawerHeaderWrapper .drawerCloseWrapper {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+.emptyImage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.badgesWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.badgeWrapper {
+  width: 100%;
+  text-align: left;
+}
+.badgeWrapper :global .ant-badge {
+  width: 100%;
+}
+.badgeWrapper :global .ant-badge-status-text {
+  width: 76%;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  text-align: left;
+}
+.cardHeader .cardTitle {
+  font-weight: 700;
+  color: var(--title-85);
+}
+.cardHeader .cardSubtitle {
+  font-weight: 500;
+  color: var(--secondary-45);
+}
+.cardHeader :global .ant-select {
+  width: 100%;
+}
+.cardHeader :global .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  border: none;
+  padding: 0;
+}
+
+.cardFooter {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xxs);
+}
+
+.cardAddBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: var(--secondary-45);
+}
+
+.badgeEditBtn {
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.badgeDisabled {
+  cursor: not-allowed;
+}
+.badgeDisabled span {
+  color: var(--secondary-45);
+}
+
+.drawerHeaderWrapper {
+  padding-bottom: var(--m);
+}
+
+.trainingInfo {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-xs);
+}
+
+.formItemLabeled {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,142 @@
+.modalSaveUserDataErrorWrapper {
+  display: flex;
+  gap: var(--m);
+  align-items: flex-start;
+}
+.modalSaveUserDataErrorWrapper .close {
+  transform: rotate(90deg);
+  color: red;
+  font-size: var(--xl);
+}
+.modalSaveUserDataErrorWrapper .modalSaveUserDataErrorContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xxs);
+  width: 100%;
+}
+.modalSaveUserDataErrorWrapper .modalSaveUserDataErrorContent .title {
+  font-size: var(--m);
+  color: var(--title-85);
+  max-width: 258px;
+}
+.modalSaveUserDataErrorWrapper .modalSaveUserDataErrorContent .subtitle {
+  font-size: var(--sm);
+  color: var(--secondary-45);
+  max-width: 258px;
+}
+.modalSaveUserDataErrorWrapper .modalSaveUserDataErrorContent .modalSaveUserDataErrorButton {
+  width: fit-content;
+  align-self: flex-end;
+}
+
+.modalTrainingsListError {
+  display: flex;
+  gap: var(--m);
+  align-items: flex-start;
+}
+.modalTrainingsListError .modalTrainingsListErrorContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xxs);
+  width: 100%;
+}
+
+.modalSaveTrainingError {
+  display: flex;
+  gap: var(--m);
+  align-items: flex-start;
+}
+.modalSaveTrainingError .modalSaveTrainingErrorContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xxs);
+  width: 100%;
+}
+
+.modalLoadFileError {
+  display: flex;
+  gap: var(--m);
+  align-items: flex-start;
+}
+.modalLoadFileError .modalLoadFileErrorContent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xxs);
+  width: 100%;
+}
+
+.palModalData {
+  display: flex;
+  flex-direction: column;
+  padding: var(--m) var(--xxs);
+  gap: var(--xl);
+}
+
+.palDataRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 40px;
+  width: 475px;
+}
+.palDataRow .avatarWrapper {
+  display: flex;
+  gap: var(--xxs);
+}
+.palDataRow .avatarWrapper p {
+  width: 50%;
+}
+.palDataRow .trainingsData {
+  display: flex;
+  flex-direction: column;
+}
+.palDataRow .trainingData {
+  display: flex;
+  justify-content: space-between;
+}
+.palDataRow .trainingData .trainingDataTitle {
+  white-space: nowrap;
+  width: 60%;
+}
+.palDataRow .trainingData .trainingDataValue {
+  width: 40%;
+}
+.palDataRow .trainingDataTitle {
+  color: var(--secondary-45);
+}
+.palDataRow .trainingDataValue {
+  color: var(--primary-light-6);
+}
+.palDataRow .avatarWrapper,
+.palDataRow .trainingsData,
+.palDataRow .trainingDataStatus,
+.palDataRow .trainingDataAction {
+  width: 100%;
+}
+@media screen and (max-width: 650px) {
+  .palDataRow {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .palDataRow:last-child {
+    flex-direction: column-reverse;
+  }
+  .palDataRow:last-child .trainingDataAction,
+  .palDataRow:last-child .trainingDataStatus {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .palDataRow:last-child .trainingDataAction :global .ant-btn,
+  .palDataRow:last-child .trainingDataStatus :global .ant-btn {
+    width: 100%;
+  }
+  .palDataRow .avatarWrapper {
+    align-items: center;
+  }
+  .palDataRow .avatarWrapper p {
+    width: 40%;
+  }
+}

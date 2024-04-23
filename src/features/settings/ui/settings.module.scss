@@ -1,0 +1,14 @@
+.settingsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--xl);
+    margin: var(--xl);
+    padding: var(--xl);
+    background: var(--gray-1);
+    border-radius: var(--xxs);
+    @media screen and (max-width: 650px) {
+        margin: 0;
+    }
+}
+
+

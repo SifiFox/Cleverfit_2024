@@ -1,0 +1,33 @@
+.cardMyWrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 241px;
+  background: var(--gray-1);
+  z-index: 10;
+}
+.cardMyWrapper :global .ant-card-body {
+  padding: 0;
+}
+
+.cardMyHeader {
+  padding: 0 var(--ssm);
+}
+.cardMyHeader .headerWrapper {
+  display: flex;
+  gap: var(--ssm);
+  padding: var(--m) 0;
+}
+
+.cardMyBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xxs);
+  padding: var(--m) var(--ssm);
+  color: var(--secondary-45);
+  height: 131px;
+}
+
+.cardMyFooter {
+  padding: var(--ssm);
+}

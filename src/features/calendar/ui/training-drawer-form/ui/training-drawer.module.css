@@ -1,0 +1,156 @@
+.trainingDrawerForm {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.trainingDrawerForm :global .ant-input-number-group-addon {
+  padding: 0;
+}
+.trainingDrawerForm :global .inputLabel-item-label {
+  padding: 0 var(--xxs);
+  background: var(--gray-5);
+}
+.trainingDrawerForm :global .ant-form-item-label > label {
+  height: var(--xl);
+}
+.trainingDrawerForm :global .ant-input-number-input {
+  height: var(--xl);
+}
+.trainingDrawerForm :global .ant-input-number-group-addon {
+  width: 36px;
+}
+.trainingDrawerForm .submitBtnWrapper {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+.trainingDrawerForm .submitBtnWrapper :global(.ant-btn) {
+  height: 40px;
+}
+
+.formBodyWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.formBody {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.formItemRow {
+  width: 100%;
+  margin-bottom: var(--xxs);
+  border: var(--min) solid #D9D9D9;
+  border-radius: var(--2min);
+}
+.formItemRow :global .ant-form-item-row {
+  display: flex;
+  flex-direction: column;
+}
+.formItemRow :global .ant-form-item-control-input,
+.formItemRow :global .ant-col {
+  min-height: unset;
+}
+.formItemRow :global .ant-form-item {
+  width: 100%;
+}
+.formItemRow :global .ant-input {
+  padding: 0 var(--ssm);
+}
+.formItemRow :global input {
+  border: none;
+}
+.formItemRow .drawerFormCheckbox {
+  width: 40px;
+  max-height: var(--xl);
+  background: #FAFAFA;
+  border-left: var(--min) solid #D9D9D9;
+}
+.formItemRow .drawerFormCheckbox :global .ant-form-item-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  min-width: 100%;
+}
+.formItemRow .drawerFormCheckbox :global .ant-form-item-control-input {
+  min-height: unset;
+}
+
+.drawerFormGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--xl);
+}
+.drawerFormGroup .drawerFormColumns {
+  display: flex;
+  align-items: flex-end;
+}
+.drawerFormGroup .drawerFormColumns :global .ant-form-item:first-child {
+  margin-right: var(--xll);
+}
+@media screen and (max-width: 750px) {
+  .drawerFormGroup .drawerFormColumns :global .ant-form-item:first-child {
+    margin-right: var(--m);
+  }
+}
+.drawerFormGroup .drawerFormColumns :global .ant-form-item {
+  min-width: 90px;
+}
+.drawerFormGroup .drawerFormColumns :global .ant-form-item-row {
+  display: flex;
+  flex-direction: column;
+  min-height: unset;
+}
+.drawerFormGroup .drawerFormColumns :global .ant-col {
+  min-height: unset;
+}
+.drawerFormGroup .drawerFormColumns :global .ant-form-item-label {
+  background: #F0F0F0;
+  margin-bottom: var(--exs);
+  padding: 0 var(--xxs);
+  white-space: nowrap;
+}
+.drawerFormGroup .drawerFormColumns :global .ant-form-item-label label:after {
+  display: none;
+}
+.drawerFormGroup .drawerFormColumns :global .ant-input-number-in-form-item {
+  width: 100%;
+}
+.drawerFormGroup .colSeparator {
+  padding: 3px 2px;
+  color: #BFBFBF;
+}
+.drawerFormGroup :global .ant-form-item {
+  margin-bottom: 0;
+}
+.drawerFormGroup :global .ant-form-item-label {
+  text-align: left;
+}
+
+.drawerFormButtons {
+  display: flex;
+  width: 100%;
+  background: #F0F0F0;
+}
+.drawerFormButtons :global .ant-form-item {
+  width: 100%;
+  margin-bottom: 0;
+  padding: var(--es) var(--ssm);
+}
+.drawerFormButtons :global .ant-form-item .ant-btn {
+  width: 100%;
+}
+.drawerFormButtons :global .ant-btn-link {
+  color: var(--primary-light-6);
+}
+.drawerFormButtons .btnRemove {
+  color: var(--title-85);
+}
+.drawerFormButtons .btnRemove:disabled {
+  color: #BFBFBF;
+}

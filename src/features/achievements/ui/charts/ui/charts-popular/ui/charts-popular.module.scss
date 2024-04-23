@@ -1,0 +1,17 @@
+
+.pieWrapper {
+    width: 50%;
+}
+
+
+.chartsPopularListTitle{
+    display: block;
+    max-width: 194px;
+    margin-bottom: var(--l);
+}
+@media screen and (max-width: 750px) {
+    .pieWrapper {
+        width: 100%;
+        height: 210px;
+    }
+}

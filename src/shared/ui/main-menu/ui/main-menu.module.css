@@ -1,0 +1,33 @@
+.mainMenu {
+  margin: 0;
+}
+.mainMenu :global .ant-menu-item {
+  font-size: var(--sm);
+  height: var(--xxl);
+}
+.mainMenu :global .ant-menu-item svg {
+  color: var(--primary-light-10);
+}
+.mainMenu :global .ant-menu-item svg path {
+  fill: var(--primary-light-10);
+}
+.mainMenu :global .ant-menu-item:not(:last-child) {
+  margin-top: 0;
+  margin-bottom: var(--m);
+  overflow: unset;
+}
+.mainMenu :global .ant-menu-item:last-child {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.mainMenu :global .ant-menu-title-content {
+  color: var(--title-85);
+}
+.mainMenu :global .ant-menu-item-selected {
+  border-right: 4px solid var(--primary-light-5);
+}
+@media screen and (max-width: 750px) {
+  .mainMenu :global .ant-menu-item {
+    padding: 0;
+  }
+}

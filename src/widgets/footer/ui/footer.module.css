@@ -1,0 +1,70 @@
+.footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-height: 283px;
+  margin: var(--xb-xl-xxl);
+  box-sizing: border-box;
+}
+@media screen and (max-width: 1010px) {
+  .footer {
+    min-height: 364px;
+  }
+}
+@media screen and (max-width: 670px) {
+  .footer {
+    flex-direction: column;
+    min-height: unset;
+    margin: var(--xb-m-xxl);
+    gap: var(--xl);
+  }
+  .footer :global .ant-card {
+    width: 100%;
+  }
+}
+.footer .footerBtn {
+  margin-bottom: var(--es);
+  padding-bottom: 0;
+  font-size: var(--font-s);
+  color: var(--primary-light-6);
+}
+@media screen and (max-width: 670px) {
+  .footer .footerBtn {
+    width: 100%;
+    order: 2;
+  }
+}
+.footer .extra {
+  text-align: left;
+}
+.footer :global .ant-card {
+  width: 240px;
+}
+@media screen and (max-width: 670px) {
+  .footer :global .ant-card {
+    width: 100%;
+  }
+  .footer :global .ant-card .ant-card-head-wrapper {
+    justify-content: center;
+  }
+}
+.footer :global .ant-card-head {
+  padding: var(--xy-xxs-xl);
+}
+.footer :global .ant-card-extra {
+  padding: 0;
+  margin-left: 0;
+}
+.footer :global .ant-card-extra .ant-btn {
+  padding: 0;
+  font-size: var(--font-s);
+  line-height: var(--lh-default);
+  color: var(--primary-light-6);
+}
+.footer :global .ant-card-body {
+  padding: var(--y-ssm);
+}
+.footer :global .ant-card-body .ant-btn {
+  width: 50%;
+  padding: 0;
+}

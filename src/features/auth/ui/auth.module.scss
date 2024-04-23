@@ -1,0 +1,99 @@
+.authTabs{
+    :global{
+        .ant-tabs-nav-list{
+            width: 88%;
+        }
+        .ant-tabs-tab{
+            width: 50%;
+            justify-content: center;
+
+            font-size: var(--font-s);
+
+            @media screen and (max-width: 400px) {
+                font-size: var(--font-xs);
+            }
+        }
+        .ant-tabs-tab-btn{
+            color: var(--title-85);
+        }
+        .ant-tabs-tab + .ant-tabs-tab{
+            margin: 0;
+        }
+        .ant-tabs-tab-active .ant-tabs-tab-btn {
+            color: var(--primary-light-6);
+        }
+        .ant-tabs-ink-bar{
+            background: var(--primary-light-6);
+        }
+        .ant-tabs-nav-list{
+            width: 100%;
+        }
+
+        .ant-input-affix-wrapper{
+            .ant-input {
+                min-height: var(--h-ml);
+                max-height: var(--h-ml);
+            }
+        }
+        .ant-input{
+            min-height: var(--h-l);
+            max-height: var(--h-l);
+            box-sizing: border-box;
+        }
+
+
+        .ant-btn-primary{
+            background: var(--primary-light-6);
+        }
+        .ant-checkbox-checked .ant-checkbox-inner{
+            background: var(--primary-light-6);
+            border-color: var(--primary-light-6);
+        }
+
+        .ant-input-group-addon{
+            color: var(--title-85);
+        }
+        .ant-checkbox-wrapper{
+            font-weight: 500;
+            display: flex;
+            width: 100%;
+           @media screen and (max-width: 400px) {
+               label{
+                   font-size: var(--font-xxs);
+               }
+           }
+        }
+
+        .ant-tabs-nav{
+            margin-bottom: var(--xl);
+            max-height: var(--h-xll);
+        }
+        .ant-form-item{
+            margin-bottom: var(--xl);
+        }
+        .ant-btn{
+            height: var(--h-l);
+            font-size: var(--m);
+            font-weight: 400;
+            @media screen and (max-width: 400px) {
+                font-size: var(--sm);
+                .anticon{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+.titleLogo{
+    width: 100%;
+    margin-bottom: var(--xxxl);
+    @media screen and (max-width: 400px) {
+        max-width: 203px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: var(--xll);
+    }
+}

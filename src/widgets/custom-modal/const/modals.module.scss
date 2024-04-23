@@ -1,0 +1,148 @@
+.modalSaveUserDataErrorWrapper {
+    display: flex;
+    gap: var(--m);
+    align-items: flex-start;
+
+    .close {
+        transform: rotate(90deg);
+        color: red;
+        font-size: var(--xl);
+    }
+
+    .modalSaveUserDataErrorContent {
+        display: flex;
+        flex-direction: column;
+        gap: var(--xxs);
+        width: 100%;
+
+        .title {
+            font-size: var(--m);
+            color: var(--title-85);
+            max-width: 258px;
+        }
+
+        .subtitle {
+            font-size: var(--sm);
+            color: var(--secondary-45);
+            max-width: 258px;
+        }
+
+        .modalSaveUserDataErrorButton {
+            width: fit-content;
+            align-self: flex-end;
+        }
+    }
+}
+
+.modalTrainingsListError{
+    display: flex;
+    gap: var(--m);
+    align-items: flex-start;
+    .modalTrainingsListErrorContent{
+        display: flex;
+        flex-direction: column;
+        gap: var(--xxs);
+        width: 100%;
+    }
+}
+
+.modalSaveTrainingError{
+    display: flex;
+    gap: var(--m);
+    align-items: flex-start;
+    .modalSaveTrainingErrorContent{
+        display: flex;
+        flex-direction: column;
+        gap: var(--xxs);
+        width: 100%;
+    }
+}
+
+.modalLoadFileError {
+    display: flex;
+    gap: var(--m);
+    align-items: flex-start;
+    .modalLoadFileErrorContent{
+        display: flex;
+        flex-direction: column;
+        gap: var(--xxs);
+        width: 100%
+    }
+}
+
+.palModalData{
+    display: flex;
+    flex-direction: column;
+    padding: var(--m) var(--xxs);
+    gap: var(--xl);
+}
+
+.palDataRow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 40px;
+    width: 475px;
+    .avatarWrapper{
+        display: flex;
+        gap: var(--xxs);
+        p{
+            width: 50%;
+        }
+    }
+    .trainingsData{
+        display: flex;
+        flex-direction: column;
+    }
+    .trainingData{
+        display: flex;
+        justify-content: space-between;
+        .trainingDataTitle{
+            white-space: nowrap;
+            width: 60%;
+        }
+        .trainingDataValue{
+            width: 40%;
+        }
+    }
+    .trainingDataTitle{
+        color: var(--secondary-45);
+    }
+    .trainingDataValue{
+        color: var(--primary-light-6);
+    }
+
+    .avatarWrapper,
+    .trainingsData,
+    .trainingDataStatus,
+    .trainingDataAction{
+        width: 100%;
+    }
+
+    @media screen and (max-width: 650px) {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &:last-child{
+            flex-direction: column-reverse;
+            .trainingDataAction,
+            .trainingDataStatus{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                :global{
+                    .ant-btn{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .avatarWrapper{
+            align-items: center;
+            p{
+                width: 40%;
+            }
+        }
+    }
+}

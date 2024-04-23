@@ -1,0 +1,58 @@
+.comment{
+    width: 100%;
+    background: var(--gray-1);
+    padding: var(--x-m);
+}
+
+.avatarWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--ssm);
+    width: 174px;
+    height: 100%;
+
+    @media screen and (max-width: 420px){
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+
+.rateDateRow{
+    display: flex;
+    gap: var(--m);
+}
+
+
+:global{
+    .ant-avatar{
+        width: 42px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ant-comment-content{
+        display: flex;
+        flex-direction: column;
+        gap: var(--ssm);
+    }
+    .ant-comment-inner{
+        gap: var(--ssm);
+        min-height: 128px;
+    }
+
+    .ant-comment-avatar{
+        display: flex;
+        align-items: center;
+    }
+
+
+    @media screen and (max-width: 420px){
+        .ant-comment-inner{
+            flex-direction: column;
+        }
+    }
+}

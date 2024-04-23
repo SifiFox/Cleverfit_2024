@@ -1,0 +1,16 @@
+:global(.ant-layout) {
+  background: none;
+}
+
+:global(.ant-btn-primary) {
+  background: var(--primary-light-6);
+}
+
+.layout {
+  max-width: 1440px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  background: url("../shared/assets/images/main-page-bg_light.png") center;
+  background-size: cover;
+}

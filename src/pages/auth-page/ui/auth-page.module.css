@@ -1,0 +1,87 @@
+.authContent {
+  background: url("@/shared/assets/images/auth-bg_light.jpg") center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+.authContent:after {
+  content: "";
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(121, 156, 212, 0.5);
+  backdrop-filter: blur(var(--ees));
+}
+
+.formWrapper {
+  position: relative;
+  display: grid;
+  align-content: center;
+  z-index: 2;
+  min-height: 100vh;
+}
+
+.formContent {
+  padding: var(--form-content-padding);
+  background: var(--gray-1);
+}
+@media screen and (max-width: 760px) {
+  .formContent {
+    padding: var(--form-content-padding-mobile);
+  }
+}
+
+.auth {
+  max-height: 688px;
+}
+
+.registration {
+  max-height: 688px;
+}
+.registration :global .ant-form-item {
+  height: unset;
+}
+@media screen and (max-width: 400px) {
+  .registration {
+    max-height: 564px;
+    padding: var(--reg-padding-mobile);
+  }
+}
+
+:global .ant-result-title {
+  font-weight: 600;
+}
+
+.confirm {
+  padding: 0;
+}
+.confirm :global .ant-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.change_password {
+  padding: var(--change-pass-padding);
+}
+.change_password :global #change__password_password_help {
+  font-size: var(--font-xxs);
+}
+
+.result {
+  padding: var(--result-padding);
+}
+.result :global .ant-btn {
+  height: var(--h-l);
+}
+@media screen and (max-width: 400px) {
+  .result {
+    padding: 0;
+  }
+  .result :global .ant-result {
+    padding: var(--xy-xxll-ym);
+  }
+}

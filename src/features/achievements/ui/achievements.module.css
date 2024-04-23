@@ -1,0 +1,278 @@
+.charts {
+  display: flex;
+  flex-direction: column;
+}
+
+.chartsTopData {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 374px;
+  gap: 150px;
+}
+.chartsTopData .loadList p {
+  max-width: 183px;
+}
+.chartsTopData .loadLists .loadListWeek {
+  max-width: 100%;
+}
+.chartsTopData .loadListsMonth {
+  gap: 100px;
+}
+@media screen and (max-width: 944px) {
+  .chartsTopData {
+    flex-direction: column;
+    gap: var(--xl);
+  }
+  .chartsTopData .loadList p {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 632px) {
+  .chartsTopData .loadList {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.chartsTopDataFull {
+  flex-direction: column;
+  gap: var(--xl);
+}
+.chartsTopDataFull .loadLists {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .chartsTopDataFull .loadLists {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.filters,
+.filtersList {
+  display: flex;
+}
+
+.filtersList {
+  gap: var(--ssm);
+  flex-wrap: wrap;
+}
+
+.filters {
+  gap: var(--xl);
+  white-space: nowrap;
+  padding: 16px 0;
+  margin-bottom: 24px;
+}
+
+.filterButton {
+  padding: var(--min) var(--xxs);
+  font-size: var(--ssm);
+  height: fit-content;
+}
+
+.selectedFilter {
+  background: var(--primary-light-1);
+  border: var(--min) solid var(--primary-light-3);
+  color: var(--primary-light-6);
+}
+.selectedFilter:focus {
+  background: var(--primary-light-1);
+  border: var(--min) solid var(--primary-light-3);
+  color: var(--primary-light-6);
+}
+
+.graphicWrapper {
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  padding: var(--m);
+  border: 1px solid var(--gray-4);
+}
+@media screen and (max-width: 900px) {
+  .graphicWrapper {
+    max-width: unset;
+  }
+}
+@media screen and (max-width: 650px) {
+  .graphicWrapper {
+    padding: var(--s) var(--sm);
+  }
+}
+
+.full {
+  max-width: 100%;
+  width: 100%;
+}
+
+.loadList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.loadList p {
+  color: var(--title-85);
+  margin-bottom: 20px;
+}
+
+.loadListWeek {
+  display: flex;
+  flex-direction: column;
+  gap: var(--es);
+  min-width: 168px;
+  max-width: 183px;
+}
+
+.loadListItem {
+  display: flex;
+  align-items: center;
+  gap: var(--m);
+  min-height: var(--xll);
+}
+
+.weekDay,
+.weekDayRed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--m);
+  min-width: var(--m);
+  height: var(--m);
+  border-radius: 50%;
+}
+
+.weekDay {
+  background: var(--primary-light-1);
+  color: var(--primary-light-6);
+}
+
+.weekDayRed {
+  background: var(--primary-error-1);
+  color: var(--error);
+}
+
+.weekDayFilled,
+.weekDayFilledRed {
+  color: #FFF;
+}
+
+.weekDayFilled {
+  background: var(--primary-light-6);
+}
+
+.weekDayFilledRed {
+  background: var(--error);
+}
+
+.dayTitle {
+  width: 100px;
+  color: var(--secondary-45);
+}
+
+.loadListItemValue {
+  min-width: 43px;
+  font-weight: 700;
+}
+
+.chartsStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--xl);
+  padding: var(--xl) 0;
+}
+@media screen and (max-width: 823px) {
+  .chartsStats {
+    flex-direction: column;
+  }
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  padding: var(--l);
+  border: var(--min) solid var(--gray-4);
+  max-width: 200px;
+  text-align: center;
+}
+.statCard .cardValue {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--title-85);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.statCard .cardTitle {
+  color: var(--secondary-45);
+  font-size: var(--sm);
+}
+@media screen and (max-width: 823px) {
+  .statCard {
+    max-width: unset;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 var(--m);
+    height: var(--2xxl);
+  }
+}
+
+.weekTitle {
+  display: flex;
+  gap: var(--m);
+  cursor: pointer;
+}
+
+.loadListWeekHidden .loadListItem {
+  display: none;
+}
+
+.oftenWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--m);
+  max-width: 645px;
+  width: 100%;
+  margin-bottom: var(--xl);
+  font-weight: 600;
+}
+.oftenWrapper .oftenTitle {
+  max-width: 183px;
+  width: 100%;
+  font-size: var(--sm);
+  font-weight: 400;
+  text-align: left;
+  color: var(--secondary-45);
+}
+.oftenWrapper p {
+  display: flex;
+  align-items: center;
+  gap: var(--m);
+  height: var(--h-ll);
+}
+.oftenWrapper p span {
+  font-size: var(--xl);
+  color: var(--title-85);
+}
+@media screen and (max-width: 860px) {
+  .oftenWrapper .oftenTitle {
+    max-width: 50%;
+  }
+  .oftenWrapper p span {
+    width: 50%;
+  }
+}
+
+.statsBottom {
+  display: flex;
+  align-items: center;
+  min-height: 334px;
+}
+@media screen and (max-width: 860px) {
+  .statsBottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

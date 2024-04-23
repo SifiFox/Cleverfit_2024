@@ -1,0 +1,45 @@
+.profileInfoWrapper{
+    display: flex;
+    gap: var(--xl);
+
+    .profileInfoInputs{
+        max-width: 352px;
+        width: 100%;
+    }
+
+    .profilePrivacyInputs{
+        width: 100%;
+        max-width: 490px;
+    }
+    @media screen and (max-width: 650px) {
+        flex-direction: column-reverse;
+        :global{
+            .ant-form-item-explain, .ant-form-item-extra{
+                font-size: var(--ssm);
+            }
+        }
+    }
+
+    :global{
+        .ant-form-item-control-input{
+            min-height: 40px;
+            .ant-form-item-control-input-content{
+                height: 100%;
+
+                .ant-input-password,
+                .ant-input-wrapper,
+                .ant-input-group-wrapper,
+                .ant-picker,
+                input{
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+:global{
+    .ant-upload-picture-card-wrapper{
+        width: fit-content;
+    }
+}

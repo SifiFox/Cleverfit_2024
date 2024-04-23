@@ -1,0 +1,13 @@
+.settingsContent {
+  background: unset;
+  background: #F5F5F5;
+  z-index: 0;
+}
+.settingsContent h1 {
+  font-size: var(--l);
+}
+@media screen and (max-width: 650px) {
+  .settingsContent h1 {
+    font-size: var(--sm);
+  }
+}

@@ -1,0 +1,60 @@
+.trainingContent {
+  margin: 0 var(--xl) var(--xl);
+  padding: var(--xl);
+  background: var(--gray-1);
+  border-radius: var(--xxs);
+}
+@media screen and (max-width: 750px) {
+  .trainingContent {
+    margin: 0;
+    padding: var(--m);
+  }
+}
+.trainingContent :global .ant-tabs-nav-wrap {
+  justify-content: center;
+}
+.trainingContent :global .ant-tabs-nav-wrap .ant-tabs-nav-list {
+  width: 100%;
+  justify-content: space-between;
+  color: var(--title-85);
+  margin-right: 32px;
+}
+.trainingContent :global .ant-tabs-nav-wrap .ant-tabs-tab {
+  padding: 0;
+}
+.trainingContent :global .ant-tabs-nav-wrap .ant-tabs-tab-btn {
+  font-size: 24px;
+}
+.trainingContent :global .ant-tabs-nav-wrap .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--primary-light-6);
+}
+.trainingContent :global .ant-tabs-nav-wrap .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap,
+.trainingContent :global .ant-tabs-nav-wrap .ant-tabs-nav {
+  overflow: scroll;
+}
+.trainingContent :global .ant-tabs-content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.trainingContent :global .ant-tabs-content::-webkit-scrollbar {
+  display: none;
+}
+.trainingContent :global .ant-list-pagination .ant-pagination {
+  text-align: left;
+}
+@media screen and (max-width: 840px) {
+  .trainingContent :global .ant-tabs-nav {
+    overflow: hidden;
+  }
+  .trainingContent :global .ant-tabs-nav-wrap .ant-tabs-tab-btn {
+    font-size: 14px;
+  }
+  .trainingContent :global .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap, .trainingContent :global .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
+    overflow: unset;
+  }
+}
+@media screen and (max-width: 600px) {
+  .trainingContent :global .ant-row div {
+    width: 100%;
+  }
+}

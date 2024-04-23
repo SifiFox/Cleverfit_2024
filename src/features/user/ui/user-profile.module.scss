@@ -1,0 +1,49 @@
+.userProfileWrapper {
+    margin: 0 var(--xl) var(--xl);
+    padding: var(--xl);
+    height: 100%;
+
+    background: var(--gray-1);
+    border-radius: var(--xxs);
+
+    @media screen and (max-width: 650px) {
+        margin: 0;
+    }
+}
+
+.userProfileContent {
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--xl);
+}
+
+:global {
+    .ant-message {
+        bottom: 72px;
+        top: unset;
+    }
+
+    .ant-message-notice-content {
+        padding: 0;
+    }
+
+    .ant-message-success {
+        padding: var(--s) var(--m);
+        border: var(--min) solid #52C41A;
+        background: #f6ffed;
+    }
+
+    .ant-message-custom-content {
+        display: flex;
+        gap: var(--s);
+
+    }
+}
+
+
+.saveUserDataButton{
+    @media screen and (max-width: 650px) {
+        width: 100%;
+    }
+}

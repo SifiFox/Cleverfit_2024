@@ -1,0 +1,116 @@
+.tarifDrawer :global .ant-drawer-body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+@media screen and (max-width: 750px) {
+  .tarifDrawer {
+    width: 100%;
+  }
+}
+
+.tarifExplain {
+  padding: var(--sm) var(--xxxl);
+  background: var(--primary-light-1);
+  color: var(--primary-light-10);
+  font-weight: 600;
+  font-size: var(--m);
+  margin-bottom: var(--xk);
+  white-space: nowrap;
+}
+@media screen and (max-width: 750px) {
+  .tarifExplain {
+    padding: var(--m);
+    text-align: center;
+  }
+}
+
+.tarifDrawerBlocks {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xl);
+  padding: var(--xl);
+}
+@media screen and (max-width: 750px) {
+  .tarifDrawerBlocks {
+    max-height: 90%;
+    overflow-y: scroll;
+    padding: var(--m);
+  }
+}
+
+.tariffDrawerFooter {
+  padding: var(--ssm) var(--xll);
+  border-top: var(--min) solid var(--gray-4);
+}
+
+.tarifBlock {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xl);
+}
+.tarifBlock :global .ant-radio-group {
+  width: 100%;
+}
+
+.optionRow {
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: var(--xl);
+}
+
+.tarifsInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--m);
+  padding-bottom: var(--3x2l);
+}
+
+.tarifsInfoTitle {
+  min-width: 187px;
+  max-width: 187px;
+  font-size: var(--sm);
+}
+
+:global .ant-radio-wrapper:after {
+  display: none;
+}
+
+.tariffRadio {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+  gap: var(--xxxl);
+  color: var(--title-85);
+}
+.tariffRadio span {
+  display: flex;
+  gap: var(--xxxl);
+}
+@media screen and (max-width: 750px) {
+  .tariffRadio {
+    gap: var(--xls);
+  }
+}
+
+.tariffRadioTitle {
+  min-width: 165px;
+}
+@media screen and (max-width: 750px) {
+  .tariffRadioTitle {
+    min-width: 177px;
+  }
+}
+
+.tariffSuccessModal {
+  max-width: 539px;
+}
+@media screen and (max-width: 750px) {
+  .tariffSuccessModal {
+    max-width: 90%;
+  }
+}

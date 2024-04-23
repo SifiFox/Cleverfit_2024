@@ -1,0 +1,17 @@
+
+.viCharacter{
+    border: var(--min) solid var(--gray-5);
+}
+
+.characterInactiveError,
+.viCharacterError{
+    border: var(--min) solid red;
+    background: var(--gray-1);
+}
+
+.characterInactive{
+    border: var(--min) solid var(--gray-5);
+    background: var(--gray-1);
+}
+.characterSelected{}
+.characterFilled{}

@@ -1,0 +1,16 @@
+.notFoundWrapper{
+    margin: var(--xl);
+    padding: var(--xl);
+    height: 100%;
+
+    background: var(--gray-1);
+    border-radius: var(--xxs);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 650px) {
+        margin: var(--xl) 0;
+    }
+}

@@ -1,0 +1,37 @@
+.registerForm {
+  margin: 0;
+}
+
+.inputWithLabel :global #normal_register_password_help {
+  font-size: var(--ssm);
+}
+.inputWithLabel :global .ant-form-item-control {
+  min-width: 100%;
+}
+.inputWithLabel :global .ant-form-item-label {
+  order: 1;
+  text-align: left;
+  white-space: unset;
+}
+.inputWithLabel :global .ant-form-item-label .ant-form-item-required {
+  font-size: var(--ssm);
+  color: var(--secondary-45);
+}
+.inputWithLabel :global .ant-form-item-label .ant-form-item-required:after {
+  display: none;
+}
+.inputWithLabel :global .ant-form-item-label .ant-form-item-required:not(.ant-form-item-required-mark-optional):before {
+  display: none;
+}
+
+.flexColumn {
+  padding-top: var(--xls);
+}
+.flexColumn :global .ant-form-item-control-input-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.lastFormInput {
+  margin-bottom: var(--s);
+}

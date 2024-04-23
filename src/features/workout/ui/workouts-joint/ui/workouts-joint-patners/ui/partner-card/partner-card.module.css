@@ -1,0 +1,68 @@
+.partnerCard {
+  padding: var(--m);
+  background: var(--primary-light-1);
+  height: 194px;
+  width: 234px;
+}
+.partnerCard :global .ant-card-body {
+  padding: 0;
+}
+@media screen and (max-width: 400px) {
+  .partnerCard {
+    width: 100%;
+  }
+}
+
+.partnerCardWrapper {
+  width: 234px;
+}
+@media screen and (max-width: 400px) {
+  .partnerCardWrapper {
+    width: 100%;
+  }
+}
+
+.partnerCardFooter p {
+  display: flex;
+  justify-content: center;
+  gap: var(--xxs);
+}
+
+.clearCard {
+  height: fit-content;
+  background: var(--gray-1);
+  border: var(--min) solid var(--gray-4);
+  border-radius: 2px;
+}
+
+.partnerCardHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--xxs);
+  margin-bottom: var(--ssm);
+}
+
+.partnerCardTrainings {
+  display: flex;
+  flex-direction: column;
+  gap: var(--es);
+  margin-bottom: var(--m);
+}
+
+.partnerCardTraining {
+  display: flex;
+  text-align: left;
+  white-space: nowrap;
+  gap: var(--m);
+}
+
+.partnerTrainingTitle {
+  width: 60%;
+  font-size: var(--ssm);
+}
+
+.partnerTrainingValue {
+  font-size: var(--sm);
+  color: var(--primary-light-6);
+  font-weight: 600;
+}

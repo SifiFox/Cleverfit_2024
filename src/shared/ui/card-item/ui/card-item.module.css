@@ -1,0 +1,66 @@
+.legacyCardHeading {
+  white-space: break-spaces;
+}
+
+.cardAction {
+  max-width: 240px;
+  min-width: 182px;
+  width: 100%;
+  text-align: center;
+  border: none;
+}
+
+.cardActionIcon svg {
+  height: var(--ssm);
+  vertical-align: baseline;
+}
+
+.legacyCardBody {
+  margin-bottom: 0;
+  max-width: 96%;
+  font-size: var(--m);
+  line-height: var(--lh-default);
+  white-space: pre-line;
+  font-weight: 500;
+  color: var(--primary-light-9);
+}
+
+.cardsActions {
+  display: flex;
+  gap: var(--m);
+  margin-bottom: var(--xl);
+}
+
+.actionBtn {
+  color: var(--primary-light-6);
+}
+
+:global .ant-card-head-title {
+  padding: var(--y-s);
+}
+
+@media screen and (max-width: 834px) {
+  .legacyCardBody {
+    max-width: 100%;
+  }
+  :global .ant-card-head-wrapper {
+    text-align: left;
+  }
+  :global .ant-card-head-title {
+    white-space: unset;
+  }
+}
+@media screen and (max-width: 833px) {
+  .cards-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--xxs);
+  }
+  .card-action {
+    max-width: 100%;
+    width: 100%;
+  }
+  .card-action :global .ant-card-head-title {
+    text-align: center;
+  }
+}

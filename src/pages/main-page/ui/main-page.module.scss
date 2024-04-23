@@ -1,0 +1,99 @@
+.cardLegacy{
+    margin: var(--xb-l-l);
+    max-width: 752px;
+    min-height: 216px;
+
+    font-size: var(--font-s);
+    font-weight: 500;
+    line-height: 130%;
+
+    border: none;
+    color: var(--primary-light-9);
+
+    @media screen and (max-width: 670px) {
+        margin: var(--xb-m-l);
+        :global{
+            .ant-card-body{
+                padding: var(--txb-l-m-m);
+            }
+        }
+    }
+}
+
+.cardsActions{
+    .cardLegacy{
+        margin-bottom: var(--m);
+        min-height: unset;
+
+        font-size: var(--font-m);
+
+        color: var(--title-85);
+    }
+}
+.cardAction{
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    @media screen and (max-width: 1010px) {
+        max-width: 240px;
+        min-width: 182px;
+        width: 100%;
+        :global{
+            .ant-card-head-title{
+                text-align: left;
+                white-space: pre-wrap;
+                font-size: var(--font-s);
+            }
+        }
+    }
+}
+
+.cardsActionsList{
+    margin: var(--xb-l-l);
+    display: flex;
+    gap: var(--m);
+    max-width: 100%;
+    :global {
+        .ant-card-head-wrapper{
+            text-align: center;
+        }
+        .ant-card-head{
+            padding: var(--xy-xs-xl);
+        }
+        .ant-card-head-title {
+            padding: 0;
+        }
+        .ant-card-body{
+            padding: var(--y-s);
+        }
+        .ant-btn{
+            color: var(--primary-light-6);
+            width: 100%;
+            text-align: center;
+            padding: 0;
+            .anticon{
+                color: var(--primary-light-6);
+            }
+            .anticon-calendar{
+                path{
+                    fill: var(--primary-light-6);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 670px) {
+        flex-direction: column;
+        margin: var(--xb-m-l);
+        gap: var(--xxs);
+        .cardAction{
+            min-width: unset;
+            max-width: unset;
+        }
+        :global{
+            .ant-card-head-title {
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.loginForm {
+  margin: 0;
+}
+
+.rememberRow {
+  display: flex;
+  justify-content: space-between;
+}
+.rememberRow :global .ant-row {
+  width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+  .formItemsRow :global .ant-form-item-control-input {
+    min-height: unset;
+  }
+  .formItemsRow :global .ant-checkbox-wrapper .ant-checkbox {
+    padding: var(--r-es);
+  }
+  .formItemsRow :global .ant-checkbox-wrapper span {
+    padding: var(--x-ees);
+  }
+}
+.formItemsRow :global .ant-form-item-control-input-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.formLink {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  font-size: var(--m);
+}
+@media screen and (max-width: 400px) {
+  .formLink {
+    font-size: var(--sm);
+    padding: var(--x-yexxs);
+  }
+}

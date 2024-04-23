@@ -1,0 +1,208 @@
+.workoutsHead {
+  width: 100%;
+  background: var(--gray-2);
+  padding-top: var(--xl);
+}
+
+.workoutsTitle {
+  padding: 0 var(--xl) var(--xl);
+  text-align: center;
+}
+.workoutsTitle h2 {
+  color: var(--primary-light-9);
+  font-size: var(--xl);
+  margin-bottom: var(--xll);
+}
+.workoutsTitle p {
+  font-size: var(--sm);
+  color: var(--secondary-45);
+}
+@media screen and (max-width: 840px) {
+  .workoutsTitle {
+    padding: 0 0 var(--xl);
+  }
+}
+
+.workoutsMessages {
+  padding: var(--m) var(--xl) var(--xl);
+  background: var(--gray-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--m);
+}
+
+.workoutsJointWrapper {
+  margin: var(--xl);
+}
+@media screen and (max-width: 840px) {
+  .workoutsJointWrapper {
+    margin: 0;
+  }
+}
+
+.workoutsJointBlock {
+  width: 100%;
+  margin-bottom: var(--xl);
+}
+
+.workoutsJointButtons {
+  padding: var(--m) 88px;
+  display: flex;
+  justify-content: center;
+  gap: var(--m);
+}
+@media screen and (max-width: 840px) {
+  .workoutsJointButtons {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.myParthners {
+  padding-top: var(--m);
+}
+@media screen and (max-width: 600px) {
+  .myParthners :global .ant-row div {
+    width: 100%;
+  }
+}
+
+.workoutsPartnersHead {
+  display: flex;
+  gap: 159px;
+  margin: var(--xl) 0;
+}
+@media screen and (max-width: 834px) {
+  .workoutsPartnersHead {
+    gap: var(--2xxl);
+  }
+}
+@media screen and (max-width: 600px) {
+  .workoutsPartnersHead {
+    gap: var(--xxs);
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: var(--l);
+  }
+}
+
+.search {
+  max-width: 484px;
+}
+
+.palCardsTitle {
+  font-size: var(--l);
+  color: var(--title-85);
+  margin-bottom: var(--ssm);
+  white-space: nowrap;
+}
+
+.messagesBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--m);
+}
+
+.jointMessage {
+  display: flex;
+  gap: var(--xxs);
+  padding: var(--m) var(--m) var(--m) var(--ssm);
+  border-radius: var(--m);
+  background: var(--gray-1);
+}
+@media screen and (max-width: 940px) {
+  .jointMessage {
+    flex-direction: column;
+  }
+}
+
+.messageUser {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  min-width: 174px;
+  gap: var(--ssm);
+}
+
+.messageBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xxs);
+  width: 100%;
+}
+
+.messageBodyDesc {
+  font-weight: 700;
+  font-size: var(--m);
+  color: var(--primary-light-9);
+}
+
+.messageBodyAction :global .ant-btn {
+  padding: 0;
+}
+
+:global .ant-popover-inner-content {
+  padding: 0;
+}
+
+.messageActions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--m);
+  padding-left: var(--m);
+}
+
+.messagePopoverHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 53px;
+  padding: 0 var(--ssm);
+  border-bottom: var(--min) solid var(--gray-4);
+}
+
+.messagePopoverContent {
+  display: flex;
+  flex-direction: column;
+  width: 314px;
+  padding: 0;
+}
+
+.popoverInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--xxs);
+}
+
+.popoverInfoMain {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--xxs);
+}
+
+.messagePopoverBody {
+  padding: var(--xl) var(--ssm);
+}
+
+.popoverInfoPeriod {
+  font-size: var(--m);
+  font-weight: 600;
+  color: var(--title-85);
+}
+
+.popoverExercise {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popoverExerciseName {
+  color: var(--secondary-45);
+}
+
+.popoverExerciseValue {
+  color: var(--primary-light-6);
+}

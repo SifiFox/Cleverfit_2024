@@ -1,0 +1,48 @@
+.logoutIcon {
+  margin-right: var(--s);
+}
+@media screen and (max-width: 833px) {
+  .logoutIcon {
+    display: none;
+  }
+}
+
+.sider {
+  background: var(--sider-bg);
+  box-shadow: 0 0 var(--exs) 0 rgba(53, 53, 53, 0.6509803922);
+  z-index: 10;
+}
+.sider :global .ant-layout-sider-children {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sider .logout :global .button-title {
+  margin-left: var(--m);
+}
+@media screen and (max-width: 833px) {
+  .sider {
+    position: fixed;
+    height: 100%;
+    transition: height 0s;
+    z-index: 2;
+  }
+  .sider :global .ant-menu-item:not(:last-child) {
+    margin-bottom: var(--xxs);
+  }
+  .sider :global .ant-menu-item .ant-menu-title-content {
+    margin-left: var(--xxs);
+  }
+  .sider :global .ant-menu-item .anticon {
+    display: none;
+  }
+  .sider :global .anticon-logout {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 833px) {
+  .collapsed {
+    left: -64px;
+  }
+}

@@ -1,0 +1,42 @@
+.registerForm{
+    margin: 0;
+}
+
+.inputWithLabel{
+    :global{
+        #normal_register_password_help{
+            font-size: var(--ssm);
+        }
+        .ant-form-item-control{
+            min-width: 100%;
+        }
+        .ant-form-item-label{
+            order: 1;
+            text-align: left;
+            white-space: unset;
+            .ant-form-item-required{
+                font-size: var(--ssm);
+                color: var(--secondary-45);
+                &:after{
+                    display: none;
+                }
+            }
+            .ant-form-item-required:not(.ant-form-item-required-mark-optional):before{
+                display: none;
+            }
+        }
+    }
+}
+.flexColumn{
+    padding-top: var(--xls);
+    :global{
+        .ant-form-item-control-input-content{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+.lastFormInput{
+    margin-bottom: var(--s);
+}
+

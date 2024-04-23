@@ -1,0 +1,37 @@
+.profileInfoWrapper {
+  display: flex;
+  gap: var(--xl);
+}
+.profileInfoWrapper .profileInfoInputs {
+  max-width: 352px;
+  width: 100%;
+}
+.profileInfoWrapper .profilePrivacyInputs {
+  width: 100%;
+  max-width: 490px;
+}
+@media screen and (max-width: 650px) {
+  .profileInfoWrapper {
+    flex-direction: column-reverse;
+  }
+  .profileInfoWrapper :global .ant-form-item-explain, .profileInfoWrapper :global .ant-form-item-extra {
+    font-size: var(--ssm);
+  }
+}
+.profileInfoWrapper :global .ant-form-item-control-input {
+  min-height: 40px;
+}
+.profileInfoWrapper :global .ant-form-item-control-input .ant-form-item-control-input-content {
+  height: 100%;
+}
+.profileInfoWrapper :global .ant-form-item-control-input .ant-form-item-control-input-content .ant-input-password,
+.profileInfoWrapper :global .ant-form-item-control-input .ant-form-item-control-input-content .ant-input-wrapper,
+.profileInfoWrapper :global .ant-form-item-control-input .ant-form-item-control-input-content .ant-input-group-wrapper,
+.profileInfoWrapper :global .ant-form-item-control-input .ant-form-item-control-input-content .ant-picker,
+.profileInfoWrapper :global .ant-form-item-control-input .ant-form-item-control-input-content input {
+  height: 100%;
+}
+
+:global .ant-upload-picture-card-wrapper {
+  width: fit-content;
+}

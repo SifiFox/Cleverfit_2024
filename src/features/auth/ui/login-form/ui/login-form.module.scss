@@ -1,0 +1,52 @@
+.loginForm{
+    margin: 0;
+}
+
+.rememberRow{
+    display: flex;
+    justify-content: space-between;
+
+    :global{
+        .ant-row {
+            width: 100%;
+        }
+
+    }
+}
+.formItemsRow{
+    :global{
+        @media screen and (max-width: 400px) {
+            .ant-form-item-control-input {
+                min-height: unset
+            }
+            .ant-checkbox-wrapper{
+                .ant-checkbox{
+                    padding: var(--r-es)
+                }
+                span{
+                    padding: var(--x-ees);
+                }
+            }
+        }
+
+        .ant-form-item-control-input-content{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+}
+
+.fullWidth {
+    width: 100%;
+}
+.formLink{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: var(--m);
+    @media screen and (max-width: 400px){
+        font-size: var(--sm);
+        padding: var(--x-yexxs);
+    }
+}

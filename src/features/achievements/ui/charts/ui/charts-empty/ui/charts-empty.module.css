@@ -1,0 +1,18 @@
+.chartsEmpty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--xl);
+  padding-top: 112px;
+}
+.chartsEmpty p {
+  color: var(--title-85);
+  font-size: var(--xl);
+  font-weight: 600;
+  text-align: center;
+}
+@media screen and (max-width: 650px) {
+  .chartsEmpty {
+    padding-top: var(--xl);
+  }
+}

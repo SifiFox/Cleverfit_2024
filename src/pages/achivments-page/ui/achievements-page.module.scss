@@ -1,0 +1,71 @@
+.trainingContent{
+    margin: 0 var(--xl) var(--xl);
+    padding: var(--xl);
+    background: var(--gray-1);
+    border-radius: var(--xxs);
+    @media screen and (max-width: 750px) {
+        margin: 0;
+        padding: var(--m);
+    }
+
+    :global{
+        .ant-tabs-nav-wrap{
+            justify-content: center;
+            .ant-tabs-nav-list{
+                width: 100%;
+                justify-content: space-between;
+                color: var(--title-85);
+                margin-right: 32px;
+            }
+            .ant-tabs-tab{
+                padding: 0;
+            }
+            .ant-tabs-tab-btn{
+                font-size: 24px;
+            }
+            .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+                color: var(--primary-light-6);
+            }
+
+            .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap,
+            .ant-tabs-nav{
+                overflow: scroll;
+            }
+        }
+        .ant-tabs-content{
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .ant-list-pagination{
+            .ant-pagination{
+                text-align: left;
+            }
+        }
+
+        @media screen and (max-width: 840px) {
+            .ant-tabs-nav{
+                overflow: hidden;
+            }
+            .ant-tabs-nav-wrap {
+                .ant-tabs-tab-btn {
+                    font-size: 14px;
+                }
+            }
+            .ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap, .ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap{
+                overflow: unset;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .ant-row{
+                div{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+

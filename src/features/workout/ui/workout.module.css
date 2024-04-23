@@ -1,0 +1,74 @@
+.workoutsEmptyWrapper {
+  margin-top: 148px;
+}
+.workoutsEmptyWrapper :global .ant-typography {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 56px 0;
+}
+
+.tableWrapper {
+  max-width: 555px;
+}
+.tableWrapper :global .ant-table-thead {
+  white-space: nowrap;
+}
+.tableWrapper :global .ant-table-thead .ant-table-cell:not(:last-child) {
+  background: var(--gray-4);
+}
+.tableWrapper :global .ant-table-thead .ant-table-cell:last-child {
+  background: unset;
+}
+.tableWrapper :global .ant-table-thead .ant-table-column-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 750px) {
+  .tableWrapper :global .ant-table-thead {
+    font-size: 12px;
+  }
+}
+.tableWrapper .tableCreateButton {
+  margin-top: 24px;
+  height: 40px;
+}
+@media screen and (max-width: 750px) {
+  .tableWrapper .tableCreateButton {
+    width: 100%;
+  }
+}
+
+.messageNotification {
+  display: flex;
+  justify-content: space-between;
+  width: 395px;
+}
+@media screen and (max-width: 400px) {
+  .messageNotification {
+    width: 80%;
+  }
+}
+
+.marathonsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url("@/shared/assets/images/maraphonsBg.png");
+  padding: 258px 0;
+}
+.marathonsWrapper .marathonsTitle {
+  padding: var(--xl);
+  font-size: 24px;
+  color: var(--primary-light-9);
+  font-weight: 600;
+  text-align: center;
+}
+.marathonsWrapper .marathonsSubTitle {
+  padding: var(--xl);
+  font-size: 14px;
+  color: var(--secondary-45);
+  text-align: center;
+}
