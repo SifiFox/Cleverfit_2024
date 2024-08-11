@@ -1,4 +1,6 @@
-## Completed training Cleverfit App 
+## Completed training Cleverfit App \
+**Deploy:** https://clevertecfrontendlab.github.io/ 
+
 
 ![image](https://github.com/SifiFox/Cleverfit_2024/assets/36167942/422894a2-f7e8-413c-bb0f-be650e2e89dc)
 ![image](https://github.com/SifiFox/Cleverfit_2024/assets/36167942/bea74c9d-5240-40ce-8bc7-7cb691ab827e)
