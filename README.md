@@ -1,5 +1,5 @@
-## Completed training Cleverfit App \
-**Deploy:** https://antonovich-cleverfit.netlify.app/auth
+## Completed training Cleverfit App 
+**Deploy:** https://antonovich-cleverfit.netlify.app/
 
 
 ![image](https://github.com/SifiFox/Cleverfit_2024/assets/36167942/422894a2-f7e8-413c-bb0f-be650e2e89dc)
