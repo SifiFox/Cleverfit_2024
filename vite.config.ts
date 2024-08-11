@@ -6,7 +6,7 @@ import { defineConfig } from 'vite';
 import vitePluginSvgr from 'vite-plugin-svgr';
 
 export default defineConfig(({command}) => ({
-    base: command === 'build' ? '/SifiFox' : '/',
+    base: '/',
     plugins: [react(), vitePluginSvgr()],
     server: {
         host: true,
